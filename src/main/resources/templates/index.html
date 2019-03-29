@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml" >
 <head>
     <meta charset="utf-8"/>  <!-- polskie znaku -->
-    <title>Calculate Your BMI - Body Mass Index</title>
+    <title style="margin-left: 750pxpx">Calculate Your BMI - Body Mass Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-
+<body style="background-image: url(http://cdn.sci-news.com/images/enlarge4/image_5965e-Healthy-Lifestyle.jpg")>
 <div>
     <br>
-    <span style="color:white;  font-family: Arial, Helvetica, sans-serif;	 font-size: 40px;   padding-top:20px;">
+    <span style="color:white;  font-family: Arial, Helvetica, sans-serif;   font-size: 20px;   padding-top:40px;">
 			 Calculate Your BMI - Body Mass Index
     </span>
 
 
-    <div>
+    <div style="margin-left: 750px">
         <br>
 
-        <div class="font-input">
+        <div class="font-input" style="font-size: 20px" >
             <form action="/">
-                <div class="title">Step 1. Select gender
+                <div  class="title">Step 1. Select gender
                     <br> <br>
 
                     <input type="radio" name="gender" value="male" th:checked="${gender=='male'}"> Male
@@ -55,6 +56,7 @@
 
 
             <p th:text="${bmi}" class="title"></p>
+
 
 
 
